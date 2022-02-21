@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Martel:wght@200;300;400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:wght@200;300;400;500;600;700;900&family=Roboto+Slab:wght@300;400&family=Roboto:wght@100;300;400;500&display=swap");
+
+* {
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+}
+
+section {
+  display: grid;
+  justify-items: center;
+  background-color: black;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 375px;
+  background-color: rgb(7, 7, 7);
+}
+
+header img {
+  width: 1.25rem;
+  height: 1rem;
+  filter: invert(1);
+  margin: 1.5rem 1.7rem;
+}
+
+header .cart {
+  width: 1.6rem;
+  height: 1.4rem;
+}
+
+#hr {
+  display: flex;
+  justify-content: center;
+  width: 375px;
+  background-color: rgb(7, 7, 7);
+}
+
+hr {
+  width: 320px;
+  height: 1px;
+  border-radius: 2rem;
+  background-color: rgb(66, 66, 66);
+  border: none;
+}
+
+main {
+  width: 375px;
+  background-color: rgb(7, 7, 7);
+  display: flex;
+  flex-direction: column;
+}
+
+main div {
+  margin: 2.1rem 2.05rem;
+}
+
+main img {
+  width: 310px;
+}
+
+main div h1 {
+  font-family: "Nunito", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+main div p {
+  color: rgb(187, 187, 187);
+  font-size: 0.83rem;
+  letter-spacing: 1.3;
+  line-height: 1.8;
+  font-family: "Gideon Roman", cursive;
+}
+
+.rating {
+  display: flex;
+  margin-top: -1.5rem;
+  align-items: center;
+}
+
+.rating span {
+  background-color: rgb(0, 136, 52);
+  padding: 2px 9px 0px;
+  border-radius: 10px;
+  margin-right: 0.5rem;
+}
+
+.rating span img {
+  filter: invert(1);
+  width: 11px;
+  margin: 0 -1.5px;
+}
+
+.rating h5 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  margin-right: 0.5rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.rating p {
+  font-size: 0.65rem;
+  color: rgb(99, 99, 99);
+  font-family: "Nunito", sans-serif;
+}
+
+.price-display {
+  display: flex;
+  margin: 0rem 2rem;
+}
+
+.price-display h1 {
+  font-family: "Montserrat", sans-serif;
+  margin-right: 1.5rem;
+  font-weight: 650;
+  font-size: 1.9rem;
+}
+
+.price-display .old-price {
+  color: rgb(65, 65, 73);
+  text-decoration: line-through 1px;
+  font-weight: 500;
+}
+
+#price {
+  background-color: rgb(7, 7, 7);
+  width: 375px;
+}
+
+#details {
+  display: flex;
+}
+
+.details img.active {
+  display: block;
+  filter: invert(1);
+}
+
+.details img {
+  display: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 2.5rem -0.5rem;
+}
+
+.popular {
+  background-color: rgb(35, 34, 39);
+  color: white;
+  margin: 0rem 1.3rem -1rem;
+  padding: 1rem;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  cursor: pointer;
+}
+
+.popular.active {
+  width: 70%;
+  border: solid white 3px;
+  border-bottom: none;
+  background-color: rgb(45, 41, 58);
+  padding: 0.9rem;
+}
+
+.popular h6 {
+  background-color: rgb(0, 89, 255);
+  font-size: 0.4rem;
+  padding: 0.2rem 0.3rem;
+  border-radius: 3rem;
+  width: fit-content;
+  margin-bottom: 0rem;
+  font-weight: 100;
+}
+
+.popular img {
+  width: 6px;
+  filter: invert(1);
+}
+
+#price .price-first {
+  background-color: rgb(35, 34, 39);
+  color: white;
+  margin: 0rem 1.3rem 1rem;
+  padding: 1rem;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+#price .price-first.active {
+  width: 70%;
+  border: solid white 3px;
+  background-color: rgb(45, 41, 58);
+  border-top: none;
+  padding: 0.9rem;
+}
+
+#price .price-second {
+  cursor: pointer;
+  background-color: rgb(35, 34, 39);
+  color: white;
+  margin: 0rem 1.3rem 1rem;
+  padding: 1rem;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#price .price-second.active {
+  width: 70%;
+  background-color: rgb(45, 41, 58);
+  border: 3px solid white;
+  padding: 0.8rem;
+}
+
+#price h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+  font-family: "Roboto", sans-serif;
+}
+
+#price p {
+  font-size: 0.75rem;
+  font-family: "Martel", serif;
+  margin-bottom: 0.5rem;
+  color: rgb(90, 90, 90);
+}
+
+#price span {
+  display: flex;
+}
+
+#yellow {
+  color: rgb(182, 124, 0);
+}
+
+span h6 {
+  font-weight: 500;
+  margin-right: 0.5rem;
+  font-size: 0.75rem;
+  font-family: "Roboto", sans-serif;
+  color: rgb(0, 187, 72);
+}
+
+#price h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.old-price {
+  text-decoration: line-through 1px;
+  color: rgb(76, 79, 87);
+}
+
+#price h3 {
+  color: white;
+  background-color: rgb(0, 37, 58);
+  margin: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#price h3:active {
+  background-color: rgb(5, 60, 82);
+}
+
+#price h3 img {
+  filter: invert(1);
+  width: 1.1rem;
+  margin-right: 0.3rem;
+}
